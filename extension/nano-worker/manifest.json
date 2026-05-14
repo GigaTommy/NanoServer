@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "NanoServer Gemini Nano Worker",
+  "description": "Hidden Gemini Nano worker for NanoServer local OpenAI/Anthropic-compatible API.",
+  "version": "1.0.7",
+  "minimum_chrome_version": "138",
+  "permissions": [
+    "alarms",
+    "offscreen",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8458/*",
+    "http://localhost:8458/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "NanoServer Gemini Nano Worker"
+  }
+}
