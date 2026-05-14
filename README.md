@@ -154,7 +154,7 @@ Codex config example:
 
 ```toml
 [mcp_servers.chrome-gemini-nano]
-command = "./scripts/gemini-nano-mcp.py"
+command = "<repo-root>/scripts/gemini-nano-mcp.py"
 ```
 
 Available MCP tools:
